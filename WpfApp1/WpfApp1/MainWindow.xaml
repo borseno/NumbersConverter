@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*" />
+            <RowDefinition Height="106*" />
+            <RowDefinition Height="42*" />
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="105*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="TextBlock" Grid.Column="0" Grid.ColumnSpan="4"/>
+
+        <Button Grid.Column="0" Grid.Row="0" FontSize="32">2 --> 8</Button>
+        <Button Grid.Column="0" Grid.Row="1" FontSize="32">2 --> 10</Button>
+        <Button Grid.Column="0" Grid.Row="2" FontSize="32" Grid.RowSpan="2">2 --> 16</Button>
+
+        <Button Grid.Column="1" Grid.Row="0" FontSize="32">8 --> 2</Button>
+        <Button Grid.Column="1" Grid.Row="1" FontSize="32">8 --> 10</Button>
+        <Button Grid.Column="1" Grid.Row="2" FontSize="32" Grid.RowSpan="2">8 --> 16</Button>
+
+        <Button Grid.Column="2" Grid.Row="0" FontSize="32">10 --> 2</Button>
+        <Button Grid.Column="2" Grid.Row="1" FontSize="32">10 --> 8</Button>
+        <Button Grid.Column="2" Grid.Row="2" FontSize="32" Grid.RowSpan="2">10 --> 16</Button>
+
+        <Button Grid.Column="3" Grid.Row="0" FontSize="32">16 --> 2</Button>
+        <Button Grid.Column="3" Grid.Row="1" FontSize="32">16 --> 8</Button>
+        <Button Grid.Column="3" Grid.Row="2" FontSize="32" Grid.RowSpan="2">16 --> 10</Button>
+        <TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" Background="White" FontSize="64" Name="Number"/>
+
+    </Grid>
+</Window>
